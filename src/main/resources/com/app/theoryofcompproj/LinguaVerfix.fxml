@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.theoryofcompproj.LinguaVerfix_controller">
+   <children>
+      <Pane id="main_pane" fx:id="mainPane" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="testButton" layoutX="169.0" layoutY="246.0" mnemonicParsing="false" onMouseReleased="#TestButton_MouseReleased" text="Click Me" />
+            <Label fx:id="testLabel" layoutX="175.0" layoutY="170.0" prefWidth="50.0" text="0" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
