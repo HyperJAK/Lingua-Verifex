@@ -5,7 +5,10 @@ module com.app.theoryofcompproj {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
+    requires com.fasterxml.jackson.annotation;
+    requires com.fasterxml.jackson.core;
+    requires com.fasterxml.jackson.databind;
 
-    opens com.app.theoryofcompproj to javafx.fxml;
-    exports com.app.theoryofcompproj;
+    opens net.app.theoryofcompproj to javafx.fxml;
+    exports net.app.theoryofcompproj;
 }
