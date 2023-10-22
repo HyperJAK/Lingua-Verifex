@@ -1,5 +1,7 @@
-package com.app.theoryofcompproj;
+package net.app.theoryofcompproj;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -13,6 +15,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LinguaVerfix_controller implements Initializable {
+
+    JsonManip jsonManip = new JsonManip();
 
     @FXML
     private Label testLabel;
@@ -35,7 +39,13 @@ public class LinguaVerfix_controller implements Initializable {
     @FXML
     void TestButton_MouseReleased(MouseEvent event) {
         testLabel.setText("Button was clicked");
-
+        testButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                System.out.println("tr");
+                jsonManip.writeToFile();
+            }
+        });
     }
 
 
