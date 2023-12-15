@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.app.theoryofcompproj.fxml_controllers.LanguageCheckerPageController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefWidth="70.0" spacing="25.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Text fx:id="int_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Int" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="double_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Double" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="float_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Float" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="char_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Char" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="string_text" strokeType="OUTSIDE" strokeWidth="0.0" text="String" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="variable_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Variable" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="if_text" strokeType="OUTSIDE" strokeWidth="0.0" text="If" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="do_while_text" strokeType="OUTSIDE" strokeWidth="0.0" text="DoWhile" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="while_text" strokeType="OUTSIDE" strokeWidth="0.0" text="While" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="for_text" strokeType="OUTSIDE" strokeWidth="0.0" text="For" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="main_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Main" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="array_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Array" wrappingWidth="100.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#switchScene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="690.0" prefWidth="848.0" spacing="50.0">
+               <children>
+                  <Label text="Enter Your Text">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="string_input" prefHeight="45.0" prefWidth="877.0" promptText="String" styleClass="text-field-with-border" />
+                  <TextField fx:id="check_input" prefHeight="43.0" prefWidth="305.0" promptText="Check Box" styleClass="text-field-with-border" />
+                  <Button fx:id="checkBtn" mnemonicParsing="false" prefHeight="44.0" prefWidth="251.0" text="Check" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

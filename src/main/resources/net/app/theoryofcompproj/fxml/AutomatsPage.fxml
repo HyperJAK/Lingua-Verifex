@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.app.theoryofcompproj.fxml_controllers.AutomatsPageController">
+   <top>
+      <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <ImageView fx:id="arrowBtnAutomats" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#switchScene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="25.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="check_btn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onCheckBtnSwitch" prefHeight="28.0" prefWidth="318.0" text="Check Language">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="reset_btn" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="318.0" text="Reset All">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="606.0" prefWidth="1326.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <CheckBox fx:id="int_checkbox" mnemonicParsing="false" prefHeight="17.0" prefWidth="111.0" text="INT">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="double_checkbox" mnemonicParsing="false" text="Double">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="float_checkbox" mnemonicParsing="false" text="Float">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="char_checkbox" mnemonicParsing="false" text="Char">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="string_checkbox" mnemonicParsing="false" text="String">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="variable_checkbox" mnemonicParsing="false" text="Variable">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="if_checkbox" mnemonicParsing="false" text="If/Else">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="do_while_checkbox" mnemonicParsing="false" text="Do While">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="while_checkbox" mnemonicParsing="false" text="While">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="for_checkbox" mnemonicParsing="false" text="For">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="main_checkbox" mnemonicParsing="false" text="Main">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="array_checkbox" mnemonicParsing="false" text="Array">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" top="25.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

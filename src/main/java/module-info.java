@@ -11,4 +11,6 @@ module com.app.theoryofcompproj {
 
     opens net.app.theoryofcompproj to javafx.fxml;
     exports net.app.theoryofcompproj;
+    exports net.app.theoryofcompproj.fxml_controllers;
+    opens net.app.theoryofcompproj.fxml_controllers to javafx.fxml;
 }

@@ -1,0 +1,35 @@
+* {
+    -fx-font-smoothing-type: gray;
+	-fx-primary-color: #0032E4;
+	-fx-secondary-color: #FFFFFF;
+	-fx-reset-color: #E40000;
+
+	-fx-focus-color: -fx-secondary-color;
+	 -fx-letter-spacing: 2px;
+}
+
+.text-field-with-border {
+    -fx-border-color: rgba(0, 0, 0, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+.stack-pane-with-border {
+    -fx-border-color: black; /* Color of the border */
+    -fx-border-width: 1px; /* Width of the border */
+    -fx-border-radius: 5px; /* Optional: Border radius for rounded corners */
+}
+
+#BTN {
+    -fx-text-fill: white;
+    -fx-background-color : -fx-primary-color;
+     -fx-background-radius: 5;
+}
+#BTN_RED{
+    -fx-text-fill: white;
+    -fx-background-color : -fx-reset-color;
+     -fx-background-radius: 5;
+}
+#BTNX{
+    -fx-border-color: -fx-primary-color;
+     -fx-background-radius: 5;
+}

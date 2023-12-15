@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="loading_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.app.theoryofcompproj.fxml_controllers.LoadingPageController">
+   <ImageView fitHeight="119.0" fitWidth="1024.0" layoutX="-232.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <Image url="@../images/wavesOpacity.png" />
+   </ImageView>
+   <Text fx:id="MainTitle" fill="#0032e4" layoutX="200.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LINGUA" textAlignment="CENTER">
+      <font>
+         <Font name="Segoe UI Bold" size="48.0" />
+      </font>
+   </Text>
+   <Label fx:id="MainTitle2" alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="115.0" text="VERIFEX" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font name="Segoe UI Bold" size="36.0" />
+      </font>
+   </Label>
+   <Label fx:id="loadingLabel" alignment="CENTER" graphicTextGap="10.0" layoutX="243.0" layoutY="167.0" text="loading app..." textAlignment="CENTER" textFill="#000000c0" wrapText="true">
+      <font>
+         <Font name="Segoe UI" size="16.0" />
+      </font>
+   </Label>
+</Pane>

@@ -1,0 +1,26 @@
+* {
+    -fx-font-smoothing-type: gray;
+	-fx-primary-color: #0032E4;
+	-fx-secondary-color: #FFFFFF;
+	-fx-reset-color: #E40000;
+
+	-fx-focus-color: -fx-secondary-color;
+}
+
+#BTN2 {
+    -fx-text-fill: -fx-primary-color;
+    -fx-background-color : white;
+    -fx-border-color: -fx-primary-color;
+    -fx-background-radius: 5;
+}
+#BTN_RED2 {
+    -fx-text-fill: -fx-reset-color;
+    -fx-background-color : white;
+    -fx-border-color: -fx-reset-color;
+    -fx-background-radius: 5;
+}
+#BTNX2 {
+    -fx-background-color : white;
+    -fx-border-color: -fx-primary-color;
+    -fx-background-radius: 5;
+}
